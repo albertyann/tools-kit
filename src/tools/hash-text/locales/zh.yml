@@ -1,0 +1,4 @@
+tools:
+  token-generator:
+    title: 'Hash Text'
+    description: '使用以下函数对文本字符串进行哈希处理：MD5、SHA1、SHA256、SHA224、SHA512、SHA384、SHA3、RIPEMD160'
