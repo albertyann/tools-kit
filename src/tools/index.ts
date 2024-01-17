@@ -76,6 +76,7 @@ import { tool as uuidGenerator } from './uuid-generator';
 import { tool as macAddressLookup } from './mac-address-lookup';
 import { tool as xmlFormatter } from './xml-formatter';
 import { tool as osMemo } from './os-memo';
+import { tool as vimMemo } from './vim-memo';
 
 export const toolsByCategory: ToolCategory[] = [
   {
@@ -206,7 +207,7 @@ export const toolsByCategory: ToolCategory[] = [
   },
   {
     name: 'System',
-    components: [osMemo],
+    components: [osMemo, vimMemo],
   },
 ];
 
