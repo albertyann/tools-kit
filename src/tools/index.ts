@@ -75,11 +75,24 @@ import { tool as urlParser } from './url-parser';
 import { tool as uuidGenerator } from './uuid-generator';
 import { tool as macAddressLookup } from './mac-address-lookup';
 import { tool as xmlFormatter } from './xml-formatter';
+import { tool as osMemo } from './os-memo';
 
 export const toolsByCategory: ToolCategory[] = [
   {
     name: 'Crypto',
-    components: [tokenGenerator, hashText, bcrypt, uuidGenerator, ulidGenerator, cypher, bip39, hmacGenerator, rsaKeyPairGenerator, passwordStrengthAnalyser, pdfSignatureChecker],
+    components: [
+      tokenGenerator,
+      hashText,
+      bcrypt,
+      uuidGenerator,
+      ulidGenerator,
+      cypher,
+      bip39,
+      hmacGenerator,
+      rsaKeyPairGenerator,
+      passwordStrengthAnalyser,
+      pdfSignatureChecker,
+    ],
   },
   {
     name: 'Converter',
@@ -124,7 +137,12 @@ export const toolsByCategory: ToolCategory[] = [
   },
   {
     name: 'Images and videos',
-    components: [qrCodeGenerator, wifiQrCodeGenerator, svgPlaceholderGenerator, cameraRecorder],
+    components: [
+      qrCodeGenerator,
+      wifiQrCodeGenerator,
+      svgPlaceholderGenerator,
+      cameraRecorder,
+    ],
   },
   {
     name: 'Development',
@@ -143,23 +161,52 @@ export const toolsByCategory: ToolCategory[] = [
   },
   {
     name: 'Network',
-    components: [ipv4SubnetCalculator, ipv4AddressConverter, ipv4RangeExpander, macAddressLookup, macAddressGenerator, ipv6UlaGenerator],
+    components: [
+      ipv4SubnetCalculator,
+      ipv4AddressConverter,
+      ipv4RangeExpander,
+      macAddressLookup,
+      macAddressGenerator,
+      ipv6UlaGenerator,
+    ],
   },
   {
     name: 'Math',
-    components: [mathEvaluator, etaCalculator, percentageCalculator],
+    components: [
+      mathEvaluator,
+      etaCalculator,
+      percentageCalculator,
+    ],
   },
   {
     name: 'Measurement',
-    components: [chronometer, temperatureConverter, benchmarkBuilder],
+    components: [
+      chronometer,
+      temperatureConverter,
+      benchmarkBuilder,
+    ],
   },
   {
     name: 'Text',
-    components: [loremIpsumGenerator, textStatistics, emojiPicker, stringObfuscator, textDiff, numeronymGenerator],
+    components: [
+      loremIpsumGenerator,
+      textStatistics,
+      emojiPicker,
+      stringObfuscator,
+      textDiff,
+      numeronymGenerator,
+    ],
   },
   {
     name: 'Data',
-    components: [phoneParserAndFormatter, ibanValidatorAndParser],
+    components: [
+      phoneParserAndFormatter,
+      ibanValidatorAndParser,
+    ],
+  },
+  {
+    name: 'System',
+    components: [osMemo],
   },
 ];
 
