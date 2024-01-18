@@ -1,108 +1,94 @@
-## Configuration
+Linux 常用命令
 
-全局配置，该位置文件位于 ~/.gitconfig
-
+## 查看内存
 ```shell
-git config --global user.name "[name]"
-git config --global user.email "[email]"
+free
+
+or
+
+cat /proc/meminfo
 ```
 
-## Get started
-
-初始化一个 git 库
+## 主机名
 
 ```shell
-git init
+hostname
+
+# 设置主机名
+
+hostname xxx
 ```
 
-克隆一个代码库
+## hosts 域名绑定
 
 ```shell
-git clone [url]
+sudo vim /etc/hosts
 ```
 
-## Commit
-
-提交所有的修改
+## CPU
 
 ```shell
-git commit -am "[commit message]"
+lscpu
 ```
 
-对上次提交添加新的修改
+## 版本信息
 
 ```shell
-git commit --amend --no-edit
+cat /proc/version
+
+uname -a
+
+lsb_release -a
 ```
 
-## I’ve made a mistake
-
-修改最近一次提交的备注
+## 文件打包
 
 ```shell
-git commit --amend
+tar -cvf source.tar source  # 仅打包，不压缩。输出名称 需要打包的文件/文件夹
+tar -zcvf source.tar.gz source # 打包并用 gzip 压缩
+tar -jcvf source.tar.bz2 source # 打包并用 bzip2 压缩
+
+zip -r target.zip source  # 递归压缩文件夹，不需要递归压缩可以不用 -r
+unzip target.zip
 ```
 
-撤消最近的提交并保留更改
+## 解压
 
 ```shell
-git reset HEAD~1
+解压1：gunzip target.gz
+解压2：gzip -d target.gz
+
+压缩：gzip target
+解压：tar -zxvf target.tar.gz
 ```
 
-Undo the `N` most recent commit and keep changes
-撤消最近的N次提交并保留更改
+## 进程列表
 
 ```shell
-git reset HEAD~N
+top
+
+or
+
+htop
+
+or
+
+ps -ef 
 ```
 
-Undo most recent commit and get rid of changes
-撤消最近的提交并删除更改
-
+## 用户
 
 ```shell
-git reset HEAD~1 --hard
+sudo adduser username # 添加用户
+sudo passwd username  # 设置密码
+sudo chown -R username:usergroup xxx # 改变资源归属的用户和组
+sudo chmod -R 777 xxx # 改变执行权限
 ```
 
-Reset branch to remote state
-将分支重置为远程状态
+## 将html 转为png
 
 ```shell
-git fetch origin
-git reset --hard origin/[branch-name]
-```
+CutyCapt
 
-## Miscellaneous
-
-将本地 master 分支改名为 main
-
-```shell
-git branch -m master main
-```
-
-## Alias
-
-git 命令别名
-
-```shell
-[alias]
-    ci  = commit
-    co  = checkout
-    st  = status
-    br  = branch
-    cp  = cherry-pick
-    fa  = fetch --all
-    ba  = branch -a
-    lg = log --stat
-    lgg = log --graph
-    wdiff = diff --color-words
-    ppm = pull origin master
-    sp = stash
-    spp = stash pop
-[core]
-    editor = vim
-[push]
-    default = simple
-[credential]
-    helper = store
+dos2unix
 ```
