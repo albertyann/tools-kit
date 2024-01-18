@@ -18,7 +18,6 @@ import VueI18n from '@intlify/unplugin-vue-i18n/vite';
 
 const baseUrl = process.env.BASE_URL ?? '/';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     VueI18n({
@@ -53,7 +52,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       strategies: 'generateSW',
       manifest: {
-        name: 'IT Tools',
+        name: 'Tools Kit',
         description: 'Aggregated set of useful tools for developers.',
         display: 'standalone',
         lang: 'fr-FR',
