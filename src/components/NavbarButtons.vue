@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { BrandTwitter } from '@vicons/tabler';
-
 </script>
 
 <template>
