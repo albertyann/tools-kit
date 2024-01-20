@@ -7,6 +7,7 @@ import { computedRefreshableAsync } from '@/composable/computedRefreshable';
 
 const bits = ref(2048);
 const emptyCerts = { publicKeyPem: '', privateKeyPem: '' };
+const { t } = useI18n();
 
 const { attrs: bitsValidationAttrs } = useValidation({
   source: bits,
@@ -32,18 +33,18 @@ const [certs, refreshCerts] = computedRefreshableAsync(
       </n-form-item>
 
       <c-button @click="refreshCerts">
-        Refresh key-pair
+        {{ t('tools.rsa-key-pair-generator.button.refresh') }}
       </c-button>
     </div>
   </div>
 
   <div>
-    <h3>Public key</h3>
+    <h3>{{ t('tools.rsa-key-pair-generator.public-key') }}</h3>
     <TextareaCopyable :value="certs.publicKeyPem" />
   </div>
 
   <div>
-    <h3>Private key</h3>
+    <h3>{{ t('tools.rsa-key-pair-generator.private-key') }}</h3>
     <TextareaCopyable :value="certs.privateKeyPem" />
   </div>
 </template>
