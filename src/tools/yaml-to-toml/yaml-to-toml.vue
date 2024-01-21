@@ -7,6 +7,7 @@ import type { UseValidationRule } from '@/composable/validation';
 const convertYamlToToml = (value: string) => [stringifyToml(parseYaml(value))].flat().join('\n').trim();
 
 const transformer = (value: string) => value.trim() === '' ? '' : withDefaultOnError(() => convertYamlToToml(value), '');
+const { t } = useI18n();
 
 const rules: UseValidationRule<string>[] = [
   {
@@ -18,9 +19,9 @@ const rules: UseValidationRule<string>[] = [
 
 <template>
   <format-transformer
-    input-label="Your YAML"
-    input-placeholder="Paste your YAML here..."
-    output-label="TOML from your YAML"
+    :input-label="t('tools.yaml-to-toml.yaml')"
+    :input-placeholder="t('tools.yaml-to-toml.content')"
+    :output-label="t('tools.yaml-to-toml.toml')"
     output-language="toml"
     :input-validation-rules="rules"
     :transformer="transformer"

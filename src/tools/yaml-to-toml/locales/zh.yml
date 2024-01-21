@@ -1,0 +1,8 @@
+tools:
+  yaml-to-toml:
+    title: 'YAML to TOML'
+    description: '将 YAML 格式转换为 TOML。'
+
+    yaml: 'YAML'
+    content: '将 YAML 文本粘贴到这里'
+    toml: 'TOML'

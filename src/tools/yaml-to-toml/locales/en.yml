@@ -1,0 +1,8 @@
+tools:
+  yaml-to-toml:
+    title: 'YAML to TOML'
+    description: 'Parse and convert YAML to TOML.'
+
+    yaml: 'Your YAML'
+    content: 'Paste your YAML here...'
+    toml: 'TOML from your YAML'
