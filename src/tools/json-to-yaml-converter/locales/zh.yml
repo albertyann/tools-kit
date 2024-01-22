@@ -1,0 +1,8 @@
+tools:
+  json-to-toml:
+    title: 'JSON to TOML'
+    description: '将 JSON 格式转换为 TOML。'
+
+    json: 'JSON'
+    content: '请将 JSON 文本粘贴到这里...'
+    yaml: 'TOML'

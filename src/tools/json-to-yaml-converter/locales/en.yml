@@ -1,0 +1,8 @@
+tools:
+  json-to-toml:
+    title: 'JSON to TOML'
+    description: 'Simply convert JSON to TOML with this live online converter.'
+
+    json: 'Your JSON'
+    content: 'Paste your JSON here...'
+    yaml: 'TOML from your JSON'

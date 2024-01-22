@@ -1,0 +1,8 @@
+tools:
+  json-to-yaml-converter:
+    title: 'JSON to YAML'
+    description: '将 JSON 格式转换为 YAML。'
+
+    json: 'JSON'
+    content: '请将 JSON 文本粘贴到这里...'
+    yaml: 'YAML'

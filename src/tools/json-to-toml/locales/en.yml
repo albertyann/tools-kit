@@ -1,0 +1,8 @@
+tools:
+  json-to-yaml-converter:
+    title: 'JSON to YAML'
+    description: 'Simply convert JSON to YAML with this live online converter.'
+
+    json: 'Your JSON'
+    content: 'Paste your JSON here...'
+    yaml: 'YAML from your JSON'
