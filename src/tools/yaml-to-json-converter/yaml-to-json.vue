@@ -10,7 +10,7 @@ function transformer(value: string) {
     return obj ? JSON.stringify(obj, null, 3) : '';
   }, '');
 }
-
+const { t } = useI18n();
 const rules: UseValidationRule<string>[] = [
   {
     validator: (value: string) => isNotThrowing(() => parseYaml(value)),
@@ -21,9 +21,9 @@ const rules: UseValidationRule<string>[] = [
 
 <template>
   <format-transformer
-    input-label="Your YAML"
-    input-placeholder="Paste your yaml here..."
-    output-label="JSON from your YAML"
+    :input-label="t('tools.yaml-to-json-converter.yaml')"
+    :input-placeholder="t('tools.yaml-to-json-converter.content')"
+    :output-label="t('tools.yaml-to-json-converter.json')"
     output-language="json"
     :input-validation-rules="rules"
     :transformer="transformer"
