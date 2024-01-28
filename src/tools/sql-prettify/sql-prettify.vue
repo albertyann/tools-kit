@@ -66,7 +66,7 @@ const prettySQL = computed(() => formatSQL(rawSQL.value, config));
       ref="inputElement"
       v-model:value="rawSQL"
       placeholder="Put your SQL query here..."
-      rows="20"
+      rows="10"
       multiline
       autocomplete="off"
       autocorrect="off"
