@@ -1,0 +1,4 @@
+tools:
+  sql-prettify:
+    title: 'SQL格式化'
+    description: 'SQL 格式化工具（支持各种SQL方言）。'
