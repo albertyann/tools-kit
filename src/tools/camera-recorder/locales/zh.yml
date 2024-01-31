@@ -1,0 +1,4 @@
+tools:
+  camera-recorder:
+    title: '录制视频'
+    description: '启动本地摄像头拍摄视频或照片。'
