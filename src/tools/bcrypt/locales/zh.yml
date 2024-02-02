@@ -1,0 +1,4 @@
+tools:
+  bcrypt:
+    title: 'Bcrypt'
+    description: '使用 bcrypt 对文本字符串进行散列和比较。 Bcrypt 是基于 Blowfish 的密码散列函数。'

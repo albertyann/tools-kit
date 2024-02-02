@@ -82,9 +82,9 @@ tools:
   encryption:
     title: '文本加/解密'
     description: '使用 AES、TripleDES、Rabbit 或 RC4 加密算法对文本进行加密和解密。'
-  bip39-generator:
-    title: 'BIP39 密码生成器'
-    description: '从现有或随机助记词生成 BIP39 密码，或从密码中获取助记词。'
+  # bip39-generator:
+  #   title: 'BIP39 密码生成器'
+  #   description: '从现有或随机助记词生成 BIP39 密码，或从密码中获取助记词。'
   hmac-generator:
     title: 'Hmac 生成器'
     description: '使用密钥和您最喜欢的哈希函数计算基于哈希的消息身份验证代码 (HMAC)。'

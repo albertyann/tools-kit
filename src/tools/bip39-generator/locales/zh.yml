@@ -1,4 +1,4 @@
 tools:
-  camera-recorder:
-    title: '录制视频'
-    description: '启动本地摄像头拍摄视频或照片。'
+  bip39-generator:
+    title: 'BIP39 密码生成器'
+    description: '从现有或随机助记词生成 BIP39 密码，或从密码中获取助记词。'
