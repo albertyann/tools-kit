@@ -8,6 +8,7 @@ import { isValidBase64 } from '@/utils/base64';
 
 const base64Input = ref('');
 const { download } = useDownloadFileFromBase64({ source: base64Input });
+const { t } = useI18n();
 const base64InputValidation = useValidation({
   source: base64Input,
   rules: [
@@ -55,7 +56,7 @@ async function onUpload(file: File) {
 
     <div flex justify-center>
       <c-button :disabled="base64Input === '' || !base64InputValidation.isValid" @click="downloadFile()">
-        Download file
+        {{ t('tools.base64-file-converter.button.download') }}
       </c-button>
     </div>
   </c-card>
@@ -66,7 +67,7 @@ async function onUpload(file: File) {
 
     <div flex justify-center>
       <c-button @click="copyFileBase64()">
-        Copy
+        {{ t('tools.base64-file-converter.button.copy') }}
       </c-button>
     </div>
   </c-card>
