@@ -1,0 +1,10 @@
+tools:
+  base64-string-converter:
+    title: 'Base64 编码/解码'
+    description: '将指定字符串进行 Base64 编码/解码'
+
+    encode-url: '安全编码 URL'
+    decode-url: '安全解码 URL'
+
+    button:
+      copy: '拷贝'

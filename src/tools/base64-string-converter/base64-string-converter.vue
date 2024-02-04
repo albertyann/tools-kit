@@ -22,11 +22,12 @@ const b64ValidationRules = [
   },
 ];
 const b64ValidationWatch = [decodeUrlSafe];
+const { t } = useI18n();
 </script>
 
 <template>
   <c-card title="String to base64">
-    <n-form-item label="Encode URL safe" label-placement="left">
+    <n-form-item :label="$t('tools.base64-string-converter.encode-url')" label-placement="left">
       <n-switch v-model:value="encodeUrlSafe" />
     </n-form-item>
     <c-input-text
@@ -51,13 +52,13 @@ const b64ValidationWatch = [decodeUrlSafe];
 
     <div flex justify-center>
       <c-button @click="copyTextBase64()">
-        Copy base64
+        {{ t('tools.base64-string-converter.button.copy') }}
       </c-button>
     </div>
   </c-card>
 
   <c-card title="Base64 to string">
-    <n-form-item label="Decode URL safe" label-placement="left">
+    <n-form-item :label="$t('tools.base64-string-converter.decode-url')" label-placement="left">
       <n-switch v-model:value="decodeUrlSafe" />
     </n-form-item>
     <c-input-text
@@ -83,7 +84,7 @@ const b64ValidationWatch = [decodeUrlSafe];
 
     <div flex justify-center>
       <c-button @click="copyText()">
-        Copy decoded string
+        {{ t('tools.base64-string-converter.button.copy') }}
       </c-button>
     </div>
   </c-card>
