@@ -1,0 +1,4 @@
+tools:
+  color-converter:
+    title: '颜色编码转换器'
+    description: '在不同格式之间转换颜色（hex、rgb、hsl 和 css 名称）'
