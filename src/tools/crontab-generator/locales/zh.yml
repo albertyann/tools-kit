@@ -1,0 +1,4 @@
+tools:
+  crontab-generator:
+    title: 'Crontab'
+    description: '生成 crontab 可读的描述。'
