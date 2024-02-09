@@ -1,0 +1,4 @@
+tools:
+  device-information:
+    title: '显示器信息'
+    description: '获取客户当前显示器信息(屏幕尺寸、分辨率、user agent...)'
