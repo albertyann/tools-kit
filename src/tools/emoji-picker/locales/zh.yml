@@ -1,0 +1,4 @@
+tools:
+  emoji-picker:
+    title: 'Emoji 符号'
+    description: '轻松复制和粘贴表情符号，并获取每个表情符号的 unicode 和代码点值。'
