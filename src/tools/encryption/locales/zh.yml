@@ -1,0 +1,4 @@
+tools:
+  encryption:
+    title: '加密解密'
+    description: '使用 AES、TripleDES、Rabbit 或 RC4 等加密算法对文本明文进行加密和解密。'
