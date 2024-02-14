@@ -1,0 +1,4 @@
+tools:
+  html-entities:
+    title: 'Escape html 实体'
+    description: "转义或取消转义 html 实体(replace <,>, &, \" and ' to their html version)。"
