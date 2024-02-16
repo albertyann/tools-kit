@@ -1,0 +1,4 @@
+tools:
+  iban-validator-and-parser:
+    title: 'IBAN 验证和解析'
+    description: '验证并解析 IBAN 号码。检查 IBAN 是否有效，并获取国家/地区、BBAN（如果是 QR-IBAN）以及 IBAN 友好格式。'
