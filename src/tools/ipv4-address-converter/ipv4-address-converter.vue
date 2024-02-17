@@ -22,11 +22,11 @@ const convertedSections = computed(() => {
       value: convertBase({ fromBase: 10, toBase: 2, value: String(ipInDecimal) }),
     },
     {
-      label: 'Ipv6: ',
+      label: 'IPv6: ',
       value: ipv4ToIpv6({ ip: rawIpAddress.value }),
     },
     {
-      label: 'Ipv6 (short): ',
+      label: 'IPv6 (short): ',
       value: ipv4ToIpv6({ ip: rawIpAddress.value, prefix: '::ffff:' }),
     },
   ];
@@ -34,13 +34,13 @@ const convertedSections = computed(() => {
 
 const { attrs: validationAttrs } = useValidation({
   source: rawIpAddress,
-  rules: [{ message: 'Invalid ipv4 address', validator: ip => isValidIpv4({ ip }) }],
+  rules: [{ message: 'Invalid IPv4 address', validator: ip => isValidIpv4({ ip }) }],
 });
 </script>
 
 <template>
   <div>
-    <c-input-text v-model:value="rawIpAddress" label="The ipv4 address:" placeholder="The ipv4 address..." />
+    <c-input-text v-model:value="rawIpAddress" label="The IPv4 address:" placeholder="The IPv4 address..." />
 
     <n-divider />
 
@@ -53,7 +53,7 @@ const { attrs: validationAttrs } = useValidation({
       label-align="right"
       mb-2
       :value="validationAttrs.validationStatus === 'error' ? '' : value"
-      placeholder="Set a correct ipv4 address"
+      placeholder="Set a correct IPv4 address"
     />
   </div>
 </template>
