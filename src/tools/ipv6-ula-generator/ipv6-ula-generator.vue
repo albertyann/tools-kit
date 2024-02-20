@@ -3,6 +3,7 @@ import { SHA1 } from 'crypto-js';
 import InputCopyable from '@/components/InputCopyable.vue';
 import { macAddressValidation } from '@/utils/macAddress';
 
+const { t } = useI18n();
 const macAddress = ref('20:37:06:12:34:56');
 const calculatedSections = computed(() => {
   const timestamp = new Date().getTime();
@@ -34,8 +35,9 @@ const addressValidation = macAddressValidation(macAddress);
 <template>
   <div>
     <n-alert title="Info" type="info">
-      This tool uses the first method suggested by IETF using the current timestamp plus the mac address, sha1 hashed,
-      and the lower 40 bits to generate your random ULA.
+      <!-- This tool uses the first method suggested by IETF using the current timestamp plus the mac address, sha1 hashed,
+      and the lower 40 bits to generate your random ULA. -->
+      {{ t('tools.ipv6-ula-generator.info') }}
     </n-alert>
 
     <c-input-text

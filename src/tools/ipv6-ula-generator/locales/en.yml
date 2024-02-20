@@ -1,0 +1,6 @@
+tools:
+  ipv6-ula-generator:
+    title: 'IPv6 ULA generator'
+    description: 'Generate your own local, non-routable IP addresses on your network according to RFC4193.'
+
+    info: 'This tool uses the first method suggested by IETF using the current timestamp plus the mac address, sha1 hashed, and the lower 40 bits to generate your random ULA.'
