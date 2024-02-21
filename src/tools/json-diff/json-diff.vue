@@ -25,7 +25,7 @@ const jsonValidationRules = [
     :validation-rules="jsonValidationRules"
     label="Your first JSON"
     placeholder="Paste your first JSON here..."
-    rows="20"
+    rows="10"
     multiline
     test-id="leftJson"
     raw-text
@@ -37,7 +37,7 @@ const jsonValidationRules = [
     :validation-rules="jsonValidationRules"
     label="Your JSON to compare"
     placeholder="Paste your JSON to compare here..."
-    rows="20"
+    rows="10"
     multiline
     test-id="rightJson"
     raw-text
