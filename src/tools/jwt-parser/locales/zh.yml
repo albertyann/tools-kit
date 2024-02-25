@@ -1,0 +1,4 @@
+tools:
+  jwt-parser:
+    title: 'JWT 格式解析'
+    description: '解码和编码 JSON Web 令牌 (JWT) 并显示其内容。'
