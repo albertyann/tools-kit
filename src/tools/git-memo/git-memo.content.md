@@ -1,6 +1,7 @@
 ## Configuration
 
 全局配置，该位置文件位于 ~/.gitconfig
+首先设置自己的用户名和邮箱，每次提交的时候会用到该信心。
 
 ```shell
 git config --global user.name "[name]"
@@ -9,16 +10,33 @@ git config --global user.email "[email]"
 
 ## Get started
 
-初始化一个 git 库
-
+初始化一个 git 库，在工作中，这不是必要的，更多时候从clone开始。
 ```shell
 git init
 ```
 
-克隆一个代码库
+克隆一个代码库。
 
 ```shell
 git clone [url]
+
+# 如果你使用github，你可以拿到两个地址，https 或者 ssh
+git clone https://github.com/THUDM/CogVideo.git
+or
+git clone git@github.com:THUDM/CogVideo.git
+```
+
+## status
+查看工作区
+```
+git status
+```
+
+## 拉取代码
+查看工作区
+```
+git pull origin main
+# 其中 origin 是库的别名，main 是分支名
 ```
 
 ## Commit
@@ -35,12 +53,13 @@ git commit -am "[commit message]"
 git commit --amend --no-edit
 ```
 
-## I’ve made a mistake
-
-修改最近一次提交的备注
+## 推送代码
 
 ```shell
-git commit --amend
+git push origin main
+
+# 命令三件套：拉取代码 pull，提交代码  commit，推送代码 push
+# 代码只有 push 之后才会到远端服务器，这样做的原因是代码开发和代码库解耦，没有网络也可以 commit
 ```
 
 撤消最近的提交并保留更改
