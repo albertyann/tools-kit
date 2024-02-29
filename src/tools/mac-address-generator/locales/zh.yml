@@ -1,0 +1,4 @@
+tools:
+  mac-address-generator:
+    title: 'MAC 地址生成器'
+    description: '入数量和前缀。 MAC 地址将按照您选择的大小写（大写或小写）生成'
