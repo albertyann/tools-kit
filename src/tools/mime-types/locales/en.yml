@@ -1,0 +1,4 @@
+tools:
+  mime-types:
+    title: 'Mime types'
+    description: 'Generate open-graph and socials html meta tags for your website.'
