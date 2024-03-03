@@ -1,0 +1,4 @@
+tools:
+  numeronym-generator:
+    title: 'Numeronym 生成器'
+    description: '数字词是用数字组成缩写的单词。例如，“i18n”是“国际化”的数字缩写，其中 18 代表单词中第一个 i 和最后一个 n 之间的字母数。'
