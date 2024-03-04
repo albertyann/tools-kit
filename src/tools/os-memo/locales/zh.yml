@@ -1,0 +1,4 @@
+tools:
+  os-memo:
+    title: 'System memo'
+    description: '操作系统常用命令'
