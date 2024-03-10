@@ -1,0 +1,4 @@
+tools:
+  xml-formatter:
+    title: 'XML 格式化'
+    description: '格式化XML文本便于阅读。'
