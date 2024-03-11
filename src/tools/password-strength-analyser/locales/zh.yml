@@ -1,0 +1,4 @@
+tools:
+  password-strength-analyser:
+    title: '密码强度分析器'
+    description: '客户端的密码强度分析，通过分析破解时间来评估密码的强度。'
