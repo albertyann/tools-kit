@@ -1,4 +1,4 @@
 tools:
   vim-memo:
     title: 'VIM memo'
-    description: 'Detect and parse Browser, Engine, OS, CPU, and Device type/model from an user-agent string.'
+    description: 'VIM常用命令'

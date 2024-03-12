@@ -4,7 +4,7 @@ import { defineTool } from '../tool';
 export const tool = defineTool({
   name: 'VIM memo',
   path: '/vim-memo',
-  description: '操作系统常用命令',
+  description: 'VIM常用命令',
   keywords: ['git', 'push', 'force', 'pull', 'commit', 'amend', 'rebase', 'merge', 'reset', 'soft', 'hard', 'lease'],
   component: () => import('./vim-memo.vue'),
   icon: BrandGit,
