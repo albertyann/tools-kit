@@ -1,4 +1,4 @@
 tools:
   ulid-generator:
-    title: 'ULID 生成器'
+    title: 'ULID 生成器x'
     description: '生成随机的通用唯一词典可排序标识符 (ULID)。'
