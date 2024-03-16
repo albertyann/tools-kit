@@ -73,9 +73,9 @@ tools:
   bcrypt:
     title: 'Bcrypt'
     description: '使用 bcrypt 对文本字符串进行散列和比较。 Bcrypt 是基于 Blowfish 的密码散列函数。'
-  # uuid-generator:
-  #   title: ''
-  #   description: ''
+  uuid-generator:
+    title: 'UUID 生成器'
+    description: '通用唯一标识符 (UUID) 是一个128位数字，用于识别计算机系统中的信息。UUID 数量为 16^32，即 2^128 或大约 3.4x10^38（天文数字！）。'
   ulid-generator:
     title: 'UUID 生成器'
     description: '通用唯一标识符 (UUID) 是一个128位数字，用于识别计算机系统中的信息。UUID 数量为 16^32，即 2^128 或大约 3.4x10^38（天文数字！）。'
