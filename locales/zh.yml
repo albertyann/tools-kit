@@ -82,9 +82,9 @@ tools:
   encryption:
     title: '文本加/解密'
     description: '使用 AES、TripleDES、Rabbit 或 RC4 加密算法对文本进行加密和解密。'
-  # bip39-generator:
-  #   title: 'BIP39 密码生成器'
-  #   description: '从现有或随机助记词生成 BIP39 密码，或从密码中获取助记词。'
+  bip39-generator:
+    title: 'BIP39 密码生成器'
+    description: '从现有或随机助记词生成 BIP39 密码，或从密码中获取助记词。'
   hmac-generator:
     title: 'Hmac 生成器'
     description: '使用密钥和您最喜欢的哈希函数计算基于哈希的消息身份验证代码 (HMAC)。'
@@ -179,7 +179,7 @@ tools:
     title: 'Slugify 字符串'
     description: '确保字符串 url、文件名和 id 安全。'
   html-wysiwyg-editor:
-    title: '富文本编辑器'
+    title: 'HTML富文本编辑器'
     description: '在线HTML编辑器，具有功能丰富的所见即所得编辑器，立即获取内容的源代码。'
   user-agent-parser:
     title: 'User-agent 解析'
