@@ -1,4 +1,4 @@
 tools:
   random-port-generator:
     title: 'Random port generator'
-    description: 'Generate and download QR-code for an url or just a text and customize the background and foreground colors.'
+    description: 'Generate random port numbers outside of the range of "known" ports (0-1023).'
