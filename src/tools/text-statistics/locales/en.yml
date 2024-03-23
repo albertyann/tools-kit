@@ -1,0 +1,4 @@
+tools:
+  text-statistics:
+    title: 'Text statistics'
+    description: 'Generate svg images to use as placeholder in your applications.'
