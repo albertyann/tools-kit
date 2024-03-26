@@ -1,4 +1,4 @@
 tools:
   text-statistics:
     title: 'Text statistics'
-    description: 'Generate svg images to use as placeholder in your applications.'
+    description: 'Get information about a text, the amount of characters, the amount of words, it\'s size, ...'

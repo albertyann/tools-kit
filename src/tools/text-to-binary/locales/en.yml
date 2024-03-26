@@ -1,4 +1,4 @@
 tools:
   text-to-binary:
     title: 'Text to ASCII binary'
-    description: 'Get information about a text, the amount of characters, the amount of words, it\'s size, ...'
+    description: 'Convert text to its ASCII binary representation and vice versa.'
